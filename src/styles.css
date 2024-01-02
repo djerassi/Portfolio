@@ -377,6 +377,16 @@ h1.header-main {
         font-family:var(--page-fonts);
         color:var(--light-shades);
         padding: 5% 0% 5% 5%;
+        justify-content: center;
+    }
+    .address {
+        padding:5% 0% 2.5% 0%;
+    }
+    .phone {
+        padding: 0% 0% 2.5% 0%;
+    }
+    .email {
+        padding: 0% 0% 2.5% 0%;
     }
 }
 
@@ -393,5 +403,5 @@ h1.header-main {
     .card {
         max-width: 26vw;
         aspect-ratio:3/3;
-    } 
+    }
 }
