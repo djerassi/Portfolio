@@ -25,21 +25,79 @@
     max-width:100%;
 }
 
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex:1 1 auto;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    /*align-items:center;*/
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    box-shadow: rgb(221, 221, 221) 2px 2px 3px 1px;
+    padding-bottom:10%;
+    margin-bottom:50px;
+    overflow:hidden;
+}
+
+.project-1 {
+    padding-top:0;
+}
+
+.card-thumbnail {
+    content:"";
+    aspect-ratio:4/3;
+    background-color:var(--main-color);
+}
+
+.card-header {
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    align-items:center;
+}
+.card-title {
+    font-family:var(--page-fonts);
+    font-size:medium;
+    color:var(--dark-shades);
+    font-weight:400;
+    padding:0% 10%;
+}
+
+.github-icon-card {
+    max-width:50%;
+}
+
+.card-desc-wrapper {
+    width:50vw;
+    height:100%;
+}
+.card-desc {
+    max-height:10vh;
+    font-family:var(--page-fonts);
+    font-size:small;
+    text-align:justify;
+    min-height:50px;
+    padding:0% 10% 0% 10%;
+    overflow:scroll;
+}
+
 @media screen and (max-width: 600px) {
     body {
         padding:0;
         margin:0;
         border:0;
     }
-    header {
-        vertical-align:middle;
-    }
     .diagonal-bg {
         background-color:var(--dark-shades);
         max-width:100vw;
         clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
         padding: 10rem 20%;
-        transition: clip-path 1s ease-out 0.25s, background-color 1s ease-out 0.25s;
+        transition: clip-path 0.5s ease-out 0.25s, background-color 1s ease-out 0.25s;
         z-index: 1;
     }
     .diagonal-bg:hover {
@@ -47,7 +105,6 @@
         max-width:100vw;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
         padding: 10rem 20%;
-        transition: clip-path 1s ease-out 0.25s;
     }
     .portrait-container {
         position:absolute;        
@@ -86,7 +143,7 @@
         align-items: center;
         justify-content: center;
     }
-    .about-text>h2 {
+    h1 {
         font-family:var(--page-fonts);        
         font-size:x-large;
         margin-bottom:0.5em;
