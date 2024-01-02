@@ -333,10 +333,12 @@ h1.header-main {
         right:-55%;
         max-width:45%;
         justify-content: space-between;
+        align-items:end;
     }
     h1 {
         top: 10vh;
     }
+
     .about-text>p {
         top:10%;
     }
